@@ -65,6 +65,18 @@ strong {
   font-weight: var(--fw-bold);
 }
 
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 /* :focus {
   outline: 3px solid var(--clr-accent);
   outline-offset: 3px;
@@ -457,8 +469,9 @@ header {
 }
 
 .footer__link {
-  font-size: var(--fs-h3);
+  font-size: 0.7em;
   font-weight: var(--fw-bold);
+  margin: auto;
 }
 
 .footer__link:hover,
@@ -488,10 +501,17 @@ header {
 
 .copyright {
   font-size: 0.4em;
+  margin: auto;
 }
 
 @media (min-width: 600px) {
+  .footer__link {
+    font-size: 1em;
+    font-weight: var(--fw-bold);
+    margin: auto;
+  }
   .copyright {
+    font-size: var(--fs-h3);
     font-size: 0.6em;
   }
 }
