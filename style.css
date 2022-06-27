@@ -487,5 +487,11 @@ header {
 }
 
 .copyright {
-  font-size: 15px;
+  font-size: 0.4em;
+}
+
+@media (min-width: 600px) {
+  .copyright {
+    font-size: 0.6em;
+  }
 }
