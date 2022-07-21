@@ -468,7 +468,7 @@ header {
 }
 
 .image__overlay:hover > * {
-  transform: translateY(0px);
+  transform: translateY(20px);
 }
 
 .portfolio__img {
@@ -491,10 +491,26 @@ header {
   opacity: 0.5;
 } */
 
+.image__title {
+  font-size: 13px;
+}
+
+.image__description {
+  font-size: 11px;
+}
+
 @media (min-width: 600px) {
   .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+
+  .image__title {
+    font-size: 20px;
+  }
+
+  .image__description {
+    font-size: 17px;
   }
 }
 
